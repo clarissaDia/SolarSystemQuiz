@@ -2,7 +2,7 @@
     <string name="app_name">SolarSystemQuiz</string>
     <string name="Quiz_question">How well do you know solar system?</string>
     <string name="start">Let\'s start!Enter your name</string>
-    <string name="player">Name:</string>
+    <string name="player">Name</string>
     <string name="question_1">1. Which planet is closest to the sun?</string>
     <string name="pluto">Pluto</string>
     <string name="venus">Venus</string>
@@ -32,21 +32,14 @@
     <string name="rings">It is surrounded by rings</string>
     <string name="tilted">It is tilted 90 degrees angle from the plane of its orbit</string>
     <string name="uranus_year">One year in Uranus lasts 17 hours 14 minutes</string>
-    <string name="question_9">9 Check the false statement about the sun.</string>
+    <string name="question_9">9. Check the false statement about the sun.</string>
     <string name="alpha">It is located in the Alpha Centauri triple star system</string>
     <string name="hydrogen_helium">It is made mostly of hydrogen and helium</string>
     <string name="red_dwarf_star">It is a red dwarf star</string>
     <string name="question_10">10. In 2006 scientist have determined this too small to be a planet. What are we talking about?</string>
     <string name="write">Write your answer</string>
-    <string name="reset">Reset</string>
+    <string name="reset" translatable="false">Reset</string>
     <string name="submit">Submit Answers</string>
-
-
-
-
-
-
-
 
 
 </resources>

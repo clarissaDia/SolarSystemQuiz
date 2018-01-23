@@ -1,0 +1,46 @@
+
+<resources xmlns:xmls="urn:oasis:names:tc:xliff:document:1.2">
+
+
+    <string name="app_name">SolarSystemQuiz</string>
+    <string name="Quiz_question">Quanto conosci il sistema solare?</string>
+    <string name="start">Cominciamo! Scrivi il tuo nome</string>
+    <string name="player">Nome</string>
+    <string name="question_1">1. Quale pianeta è il più vicino al sole?</string>
+    <string name="pluto">Plutone</string>
+    <string name="venus">Venere</string>
+    <string name="mercury">Mercurio</string>
+    <string name="question_2">2. Quanto ci mette la luce, dal sole, per raggiungere la Terra?</string>
+    <string name="one_minute">1 minuto</string>
+    <string name="twenty_three_hours">23 ore, 56 minuti e 4 secondi</string>
+    <string name="eight_minutes">8 minuti</string>
+    <string name="question_3">3. I pianeti gassosi sono:</string>
+    <string name="j_s_u_n">Giove, Saturno, Urano, Nettuno</string>
+    <string name="v_e_m_m">Venere, Terra, Marte, Mercurio</string>
+    <string name="j_s_u_n_p">Giove, Saturno, Urano, Nettuno, Pluto</string>
+    <string name="question_4">4. Qual è il pianeta più grande del sistema solare</string>
+    <string name="saturn">Saturno</string>
+    <string name="jupiter">Giove</string>
+    <string name="uranus">Urano</string>
+    <string name="question_5">5. In quale galassia si trova il sitema solare?</string>
+    <string name="milky_way">Via Lattea</string>
+    <string name="andromeda">Galassia Andromeda</string>
+    <string name="whirlpool">Galassia Whirlpool</string>
+    <string name="question_6">6. Quale pianeta non possiede satelliti?</string>
+    <string name="question_7">7. Cos\'è la grande macchia rossa su Giove?</string>
+    <string name="mountain">una montagna</string>
+    <string name="volcano">un vulcano</string>
+    <string name="giant_storm">una tempesta giante</string>
+    <string name="question_8">8. Quali affermazioni su Urano sono vere?</string>
+    <string name="rings">ha un sistema di anelli</string>
+    <string name="tilted">è inclinato di 90 gradi rispetto al piano della sua orbita</string>
+    <string name="uranus_year">un anno su Urano dura 17 ore e 14 minuti</string>
+    <string name="question_9">9. Quali affermazioni sul sole sono false?</string>
+    <string name="alpha">Si strova nel sistema stellare Alpha Centauri</string>
+    <string name="hydrogen_helium">si compone prevalentemente di idrogeno ed elio</string>
+    <string name="red_dwarf_star">"è una nana rossa "</string>
+    <string name="question_10">10. Nel 2006 gli scienziati lo hanno definito troppo piccolo per essere un pianeta. Di cosa stiamo parlano?</string>
+    <string name="write">Scervi la tua risposta</string>
+    <string name="submit">Invia Risposte</string>
+
+</resources>
