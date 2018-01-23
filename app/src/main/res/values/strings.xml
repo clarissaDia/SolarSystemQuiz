@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">SolarSystemQuiz</string>
+    <string name="Quiz_question">How well do you know solar system?</string>
+    <string name="start">Let\'s start!Enter your name</string>
+    <string name="player">Name:</string>
+    <string name="question_1">1. Which planet is closest to the sun?</string>
+    <string name="pluto">Pluto</string>
+    <string name="venus">Venus</string>
+    <string name="mercury">Mercury</string>
+    <string name="question_2">2. How long does it take for light from sun to reach the earth?</string>
+    <string name="one_minute">1 minute</string>
+    <string name="twenty_three_hours">23 hours, 56 minutes, and 4 seconds</string>
+    <string name="eight_minutes">8 minutes</string>
+    <string name="question_3">3. The gas planets are:</string>
+    <string name="j_s_u_n">Jupiter, Saturn,Uranus, Neptune</string>
+    <string name="v_e_m_m">Venus, Earth, Mars, Mercury</string>
+    <string name="j_s_u_n_p">Jupiter, Saturn, Uranus, Neptune, Pluto</string>
+    <string name="question_4">4. Which is the biggest planet of the solar system?</string>
+    <string name="saturn">Saturn</string>
+    <string name="jupiter">Jupiter</string>
+    <string name="uranus">Uranus</string>
+    <string name="question_5">5. Which galaxy contains the Solar System?</string>
+    <string name="milky_way">Milky way galaxy</string>
+    <string name="andromeda">Andromeda galaxy</string>
+    <string name="whirlpool">Whirlpool galaxy</string>
+    <string name="question_6">6. Which planet has no moons?</string>
+    <string name="question_7">7. What is the big red spot on Jupiter?</string>
+    <string name="mountain">a mountain</string>
+    <string name="volcano">a volcano</string>
+    <string name="giant_storm">a giant storm</string>
+    <string name="question_8">8. Check the true statement about Uranus.</string>
+    <string name="rings">It is surrounded by rings</string>
+    <string name="tilted">It is tilted 90 degrees angle from the plane of its orbit</string>
+    <string name="uranus_year">One year in Uranus lasts 17 hours 14 minutes</string>
+    <string name="question_9">9 Check the false statement about the sun.</string>
+    <string name="alpha">It is located in the Alpha Centauri triple star system</string>
+    <string name="hydrogen_helium">It is made mostly of hydrogen and helium</string>
+    <string name="red_dwarf_star">It is a red dwarf star</string>
+    <string name="question_10">10. In 2006 scientist have determined this too small to be a planet. What are we talking about?</string>
+    <string name="write">Write your answer</string>
+    <string name="reset">Reset</string>
+    <string name="submit">Submit Answers</string>
+
+
+
+
+
+
+
+
+
+</resources>
