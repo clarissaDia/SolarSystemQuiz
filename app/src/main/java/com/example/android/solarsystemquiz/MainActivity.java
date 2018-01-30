@@ -1,6 +1,7 @@
 package com.example.android.solarsystemquiz;
 
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Rect;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -228,9 +229,15 @@ public class MainActivity extends AppCompatActivity {
             Toast.LENGTH_LONG).show();
         }
 
-
+        Intent sendIntent = new Intent(this, Main2Activity.class);
+        String message = "I scored " + finalScore + " in the Solar System Quiz App. Join me and Try!";
+        sendIntent.putExtra(Intent.EXTRA_TEXT, message);
+        sendIntent.setType("text/plain");
+        startActivity(sendIntent);
 
     }
+
+
 
 }
 
