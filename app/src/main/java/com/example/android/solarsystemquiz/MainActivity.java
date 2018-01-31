@@ -2,10 +2,8 @@ package com.example.android.solarsystemquiz;
 
 import android.content.Context;
 import android.content.Intent;
-import android.graphics.Rect;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
@@ -13,7 +11,6 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 
@@ -229,10 +226,13 @@ public class MainActivity extends AppCompatActivity {
             Toast.LENGTH_LONG).show();
         }
 
-        Intent sendIntent = new Intent(this, Main2Activity.class);
+        Intent shareIntent = new Intent(this,Main2Activity.class);
         String message = "I scored " + finalScore + " in the Solar System Quiz App. Join me and Try!";
-        sendIntent.putExtra("message", message);
-        startActivity(sendIntent);
+        shareIntent.setAction(Intent.ACTION_SEND_MULTIPLE);
+        shareIntent.putExtra("message", message);
+        shareIntent.setType("message");
+        startActivity(shareIntent);
+
 
     }
 
