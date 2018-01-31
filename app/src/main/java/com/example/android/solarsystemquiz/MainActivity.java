@@ -231,8 +231,7 @@ public class MainActivity extends AppCompatActivity {
 
         Intent sendIntent = new Intent(this, Main2Activity.class);
         String message = "I scored " + finalScore + " in the Solar System Quiz App. Join me and Try!";
-        sendIntent.putExtra(Intent.EXTRA_TEXT, message);
-        sendIntent.setType("text/plain");
+        sendIntent.putExtra("message", message);
         startActivity(sendIntent);
 
     }
