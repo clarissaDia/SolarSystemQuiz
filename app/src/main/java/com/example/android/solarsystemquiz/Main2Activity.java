@@ -12,8 +12,13 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+
+
     }
 
+public void shareScore (View view) {
+    String s = getIntent().getStringExtra ("message");
+}
 
 
 
