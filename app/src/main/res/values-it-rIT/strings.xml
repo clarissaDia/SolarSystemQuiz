@@ -42,5 +42,13 @@
     <string name="question_10">10. Nel 2006 gli scienziati lo hanno definito troppo piccolo per essere un pianeta. Di cosa stiamo parlano?</string>
     <string name="write">Scrivi la tua risposta</string>
     <string name="submit">Invia Risposte</string>
+    <string name="let_know">Fai sapere ai tuoi amici quanto conosci il nostro Sistema Solare...</string>
+    <string name="share">Condividi</string>
+    <string name="you">"Hai risposto a "</string>
+    <string name="questions">domande su 10.</string>
+    <string name="toast1">Grandioso! Conosci il nostro Sistema Solare molto bene!</string>
+    <string name="toast2">Sei sulla giusta strada! Continua a seguire le stelle.</string>
+    <string name="toast3">Hmmm... Sembra che tu abbia ancora qualcosa da imparare...</string>
+    <string name="again">Provaci ancora!</string>
 
 </resources>

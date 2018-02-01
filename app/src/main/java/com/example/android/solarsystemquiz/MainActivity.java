@@ -198,36 +198,36 @@ public class MainActivity extends AppCompatActivity {
     public void submitAnswer(View view) {
         String name = nameField.getText().toString();
         int finalScore = calculateScore(score);
-        String finalScoreMessage = name + " you answered " + finalScore + " questions out of 10.";
+        String finalScoreMessage = name  + "\b" + getString(R.string.you) +"\b" + finalScore  + "\b" + getString(R.string.questions);
 
 
         if (finalScore >= 8) {
             Toast.makeText(this, finalScoreMessage + "\n" +
-                    "Great! You know our Solar System very well!", Toast.LENGTH_LONG).show();
+                    getString(R.string.toast1), Toast.LENGTH_LONG).show();
         }
 
         if (finalScore == 7) {
-            Toast.makeText(this, finalScoreMessage + "\n" + "You're on the right way! Keep following the stars...",
+            Toast.makeText(this, finalScoreMessage + "\n" + getString(R.string.toast2),
                     Toast.LENGTH_LONG).show();
         }
 
         if (finalScore == 6) {
-            Toast.makeText(this, finalScoreMessage + "\n" + "You're on the right way! Keep following the stars...",
+            Toast.makeText(this, finalScoreMessage + "\n" +  getString(R.string.toast2),
                     Toast.LENGTH_LONG).show();
         }
 
         if (finalScore == 5) {
-            Toast.makeText(this, finalScoreMessage + "\n" + "You're on the right way! Keep following the stars...",
+            Toast.makeText(this, finalScoreMessage + "\n" +  getString(R.string.toast2),
                     Toast.LENGTH_LONG).show();
         }
 
         if (finalScore < 5) {
-            Toast.makeText(this, finalScoreMessage + "\n" + "Hmmm... It seems you need to learn more about..." + "\n" + "Try again",
+            Toast.makeText(this, finalScoreMessage + "\n" + getString(R.string.toast3) + "\n" + getString(R.string.again),
             Toast.LENGTH_LONG).show();
         }
 
         Intent shareIntent = new Intent(this,Main2Activity.class);
-        String message = "I scored " + finalScore + " in the Solar System Quiz App. Join me and Try!";
+        String message = getString(R.string.scored) + "\b" +  finalScore + "\b" + getString(R.string.share_mess);
         shareIntent.setAction(Intent.ACTION_SEND_MULTIPLE);
         shareIntent.putExtra("message", message);
         shareIntent.setType("message");

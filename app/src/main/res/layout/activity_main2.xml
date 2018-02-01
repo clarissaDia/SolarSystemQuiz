@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.example.android.solarsystemquiz.Main2Activity"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFD180">
 
     <TextView
         android:layout_width="match_parent"
@@ -13,14 +14,15 @@
         android:layout_marginLeft="@dimen/twenty"
         android:layout_marginRight="@dimen/twenty"
         android:layout_marginBottom="35dp"
-        android:text="Let your Friends know how well you know our Solar System..."
+        android:text="@string/let_know"
         android:gravity="center"
-        android:textSize="@dimen/image"/>
+        android:textSize="@dimen/image"
+        android:textColor="@color/text"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="share your score"
+        android:text="@string/share"
         android:layout_centerInParent="true"
         android:onClick="shareScore"/>
 
