@@ -2,7 +2,7 @@
 <resources>
     <string name="app_name">SolarSystemQuiz</string>
     <string name="Quiz_question">How well do you know solar system?</string>
-    <string name="start">Let\'s start!Enter your name</string>
+    <string name="start">Let\'s start! Enter your name</string>
     <string name="player">Name</string>
     <string name="question_1">1. Which planet is closest to the sun?</string>
     <string name="pluto">Pluto</string>
