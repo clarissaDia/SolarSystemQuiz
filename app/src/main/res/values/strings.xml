@@ -43,14 +43,14 @@
     <string name="submit">Submit Answers</string>
     <string name="let_know">Let your Friends know how well you know our Solar System...</string>
     <string name="share">Share your score</string>
-    <string name="you"> You answered  </string>
-    <string name="questions">  questions out of 10. </string>
+    <string name="you"> you answered </string>
+    <string name="questions"> questions out of 10. </string>
     <string name="toast1"> Great! You know our Solar System very well!"</string>
     <string name="toast2"> You\'re on the right way! Keep following the stars.</string>
     <string name="toast3"> Hmmm...It seems you need to learn more about... </string>
     <string name="again">Try again!</string>
-    <string name="scored">I scored  </string>
-    <string name="share_mess">  in the Solar System Quiz App. Join me and Try!</string>
+    <string name="scored">I scored </string>
+    <string name="share_mess"> in the Solar System Quiz App. Join me and Try!</string>
 
 
 

@@ -50,5 +50,7 @@
     <string name="toast2">Sei sulla giusta strada! Continua a seguire le stelle.</string>
     <string name="toast3">Hmmm... Sembra che tu abbia ancora qualcosa da imparare...</string>
     <string name="again">Provaci ancora!</string>
+    <string name="scored">"Ho totalizzato "</string>
+    <string name="share_mess">in Solar System Quiz App. Prova anche tu!</string>
 
 </resources>
