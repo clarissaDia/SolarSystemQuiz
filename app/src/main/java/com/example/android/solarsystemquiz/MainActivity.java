@@ -48,9 +48,6 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup radioGroup7;
 
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -91,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
             float x = ev.getRawX() + view.getLeft();
             float y = ev.getRawY() + view.getTop();
             if (x < view.getLeft() || x > view.getRight() || y < view.getTop() || y > view.getBottom())
-                ((InputMethodManager)this.getSystemService(Context.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow((this.getWindow().getDecorView().getApplicationWindowToken()), 0);
+                ((InputMethodManager) this.getSystemService(Context.INPUT_METHOD_SERVICE)).hideSoftInputFromWindow((this.getWindow().getDecorView().getApplicationWindowToken()), 0);
             nameField.clearFocus();
             plutoAnswer.clearFocus();
         }
@@ -99,9 +96,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-/**
-  *calculates the score based on the right answers
-  **/
+    /**
+     * calculates the score based on the right answers
+     **/
 
     public int calculateScore(int score) {
 
@@ -160,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         String tenthQuestion = plutoAnswer.getText().toString();
-        if (tenthQuestion.contains("Pluto")|| tenthQuestion.contains("Plutone"))
+        if (tenthQuestion.contains("Pluto") || tenthQuestion.contains("Plutone"))
             score += 1;
 
         return (score);
@@ -168,8 +165,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-    *This method  triggers when the reset button is pressed*
-     * */
+     * This method  triggers when the reset button is pressed*
+     */
 
     public void resetAnswers(View view) {
         nameField.setText("");
@@ -190,15 +187,15 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-/**
- *  it triggers when the Submit Answers button is pressed and it shows a Toast message with a score summary, based on the right answers given
- **/
+    /**
+     * it triggers when the Submit Answers button is pressed and it shows a Toast message with a score summary, based on the right answers given
+     **/
 
 
     public void submitAnswer(View view) {
         String name = nameField.getText().toString();
         int finalScore = calculateScore(score);
-        String finalScoreMessage = name  + "\b" + getString(R.string.you) +"\b" + finalScore  + "\b" + getString(R.string.questions);
+        String finalScoreMessage = name + "\b" + getString(R.string.you) + "\b" + finalScore + "\b" + getString(R.string.questions);
 
 
         if (finalScore >= 8) {
@@ -212,22 +209,24 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (finalScore == 6) {
-            Toast.makeText(this, finalScoreMessage + "\n" +  getString(R.string.toast2),
+            Toast.makeText(this, finalScoreMessage + "\n" + getString(R.string.toast2),
                     Toast.LENGTH_LONG).show();
         }
 
         if (finalScore == 5) {
-            Toast.makeText(this, finalScoreMessage + "\n" +  getString(R.string.toast2),
+            Toast.makeText(this, finalScoreMessage + "\n" + getString(R.string.toast2),
                     Toast.LENGTH_LONG).show();
         }
 
         if (finalScore < 5) {
             Toast.makeText(this, finalScoreMessage + "\n" + getString(R.string.toast3) + "\n" + getString(R.string.again),
-            Toast.LENGTH_LONG).show();
+                    Toast.LENGTH_LONG).show();
         }
-
-        Intent shareIntent = new Intent(this,Main2Activity.class);
-        String message = getString(R.string.scored) + "\b" +  finalScore + "\b" + getString(R.string.share_mess);
+/**
+ * This intent opens a second activity in which the user will share the score.
+ **/
+        Intent shareIntent = new Intent(this, Main2Activity.class);
+        String message = getString(R.string.scored) + "\b" + finalScore + "\b" + getString(R.string.share_mess);
         shareIntent.setAction(Intent.ACTION_SEND_MULTIPLE);
         shareIntent.putExtra("message", message);
         shareIntent.setType("message");
@@ -235,7 +234,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
 
 
 }

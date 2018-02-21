@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:weightSum="3"
-        android:background="#FFD180">
+        android:background="@color/background">
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -37,7 +37,7 @@
                 android:textSize="@dimen/image"
                 android:gravity="center"
                 android:textAllCaps="true"
-                android:textColor="#FFFFFF" />
+                android:textColor="@color/image_color" />
 
         </RelativeLayout>
 
@@ -46,8 +46,8 @@
             android:layout_height="wrap_content"
             android:text="@string/start"
             android:textSize="@dimen/edit"
-            android:layout_marginLeft="5dp"
-            android:layout_marginStart="10dp"
+            android:layout_marginLeft="@dimen/five_dp"
+            android:layout_marginStart="@dimen/ten_dp"
             android:textColor="@color/text"/>
 
         <EditText
@@ -67,11 +67,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="@string/question_1"
-    android:textSize="@dimen/question_size"
-    android:textColor="@color/text"
+    android:textAppearance="@style/Text_View"
     android:layout_marginLeft="@dimen/five_dp"
-    android:layout_marginTop="@dimen/ten_dp"
-    />
+    android:layout_marginTop="@dimen/ten_dp"/>
+
 <RadioGroup
     android:id="@+id/first_radio_group"
     android:layout_width="wrap_content"
@@ -105,11 +104,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/question_2"
-            android:textSize="@dimen/question_size"
+            android:textAppearance="@style/Text_View"
             android:layout_marginLeft="@dimen/five_dp"
-            android:layout_marginTop="@dimen/ten_dp"
-            android:textColor="@color/text"
-            />
+            android:layout_marginTop="@dimen/ten_dp"/>
+
         <RadioGroup
             android:id="@+id/second_radio_group"
             android:layout_width="wrap_content"
@@ -142,11 +140,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/question_3"
-            android:textSize="@dimen/question_size"
+            android:textAppearance="@style/Text_View"
             android:layout_marginLeft="@dimen/five_dp"
-            android:layout_marginTop="@dimen/ten_dp"
-            android:textColor="@color/text"
-            />
+            android:layout_marginTop="@dimen/ten_dp"/>
+
         <RadioGroup
             android:id="@+id/third_radio_group"
             android:layout_width="wrap_content"
@@ -178,11 +175,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/question_4"
-            android:textSize="@dimen/question_size"
+            android:textAppearance="@style/Text_View"
             android:layout_marginLeft="@dimen/five_dp"
-            android:layout_marginTop="@dimen/ten_dp"
-            android:textColor="@color/text"
-            />
+            android:layout_marginTop="@dimen/ten_dp"/>
+
         <RadioGroup
             android:id="@+id/fourth_radio_group"
             android:layout_width="wrap_content"
@@ -215,10 +211,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/question_5"
-            android:textSize="@dimen/question_size"
+            android:textAppearance="@style/Text_View"
             android:layout_marginLeft="@dimen/five_dp"
             android:layout_marginTop="@dimen/ten_dp"
-            android:textColor="@color/text"
             />
         <RadioGroup
             android:id="@+id/fifth_radio_group"
@@ -248,17 +243,15 @@
 
         </RadioGroup>
 
-
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/question_6"
-            android:textSize="@dimen/question_size"
+            android:textAppearance="@style/Text_View"
             android:layout_marginLeft="@dimen/five_dp"
             android:layout_marginTop="@dimen/ten_dp"
-            android:textColor="@color/text"
-            />
+            android:textColor="@color/text" />
+
         <RadioGroup
             android:id="@+id/sixth_radio_group"
             android:layout_width="wrap_content"
@@ -290,11 +283,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/question_7"
-            android:textSize="@dimen/question_size"
+            android:textAppearance="@style/Text_View"
             android:layout_marginLeft="@dimen/five_dp"
-            android:layout_marginTop="@dimen/ten_dp"
-            android:textColor="@color/text"
-            />
+            android:layout_marginTop="@dimen/ten_dp" />
+
         <RadioGroup
             android:id="@+id/seventh_radio_group"
             android:layout_width="wrap_content"
@@ -326,11 +318,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/question_8"
-            android:textSize="@dimen/question_size"
+            android:textAppearance="@style/Text_View"
             android:layout_marginLeft="@dimen/five_dp"
-            android:layout_marginTop="@dimen/ten_dp"
-            android:textColor="@color/text"
-            />
+            android:layout_marginTop="@dimen/ten_dp" />
+
         <CheckBox
             android:id="@+id/rings_surrounded"
             android:layout_width="match_parent"
@@ -360,10 +351,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/question_9"
-            android:textSize="@dimen/question_size"
+            android:textAppearance="@style/Text_View"
             android:layout_marginLeft="@dimen/five_dp"
             android:layout_marginTop="@dimen/ten_dp"
-            android:textColor="@color/text"
             />
 
         <CheckBox
@@ -398,11 +388,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/question_10"
-            android:textSize="@dimen/question_size"
+            android:textAppearance="@style/Text_View"
             android:layout_marginLeft="@dimen/five_dp"
             android:layout_marginTop="@dimen/ten_dp"
-            android:textColor="@color/text"
             />
+
         <EditText
             android:id="@+id/pluto_answer"
             android:layout_width="match_parent"

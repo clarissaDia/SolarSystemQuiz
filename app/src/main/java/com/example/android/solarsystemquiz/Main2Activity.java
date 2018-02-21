@@ -15,7 +15,11 @@ public class Main2Activity extends AppCompatActivity {
 
     }
 
-    public void shareScore (View view) {
+    /**
+     * it triggers when the Share Score button is pressed and the intents opens other apps to share a message containing the score
+     **/
+
+    public void shareScore(View view) {
         Intent sendIntent = new Intent();
         sendIntent.setAction(Intent.ACTION_SEND);
         sendIntent.putExtra(Intent.EXTRA_TEXT, getIntent().getStringExtra("message"));
@@ -23,7 +27,7 @@ public class Main2Activity extends AppCompatActivity {
         startActivity(sendIntent);
     }
 
-    }
+}
 
 
 

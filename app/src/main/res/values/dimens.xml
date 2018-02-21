@@ -7,5 +7,6 @@
     <dimen name="twenty">20dp</dimen>
     <dimen name="button">24dp</dimen>
     <dimen name="five_dp">5dp</dimen>
+    <dimen name="bottom">35dp</dimen>
 
 </resources>

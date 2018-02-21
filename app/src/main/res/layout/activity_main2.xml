@@ -13,7 +13,7 @@
         android:layout_marginTop="35dp"
         android:layout_marginLeft="@dimen/twenty"
         android:layout_marginRight="@dimen/twenty"
-        android:layout_marginBottom="35dp"
+        android:layout_marginBottom="@dimen/bottom"
         android:text="@string/let_know"
         android:gravity="center"
         android:textSize="@dimen/image"
