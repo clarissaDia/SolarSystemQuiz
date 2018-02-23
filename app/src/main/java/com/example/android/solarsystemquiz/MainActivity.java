@@ -149,6 +149,7 @@ public class MainActivity extends AppCompatActivity {
             score += 1;
         }
         String tenthQuestion = plutoAnswer.getText().toString();
+        tenthQuestion = tenthQuestion.trim();
         if (tenthQuestion.contains("Pluto") || tenthQuestion.contains("Plutone"))
             score += 1;
         return (score);
