@@ -13,7 +13,6 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-
 public class MainActivity extends AppCompatActivity {
 
     /**
@@ -60,12 +59,12 @@ public class MainActivity extends AppCompatActivity {
         milkyWayAnswer = findViewById(R.id.milky_way_button);
         noMoonsAnswer = findViewById(R.id.no_moons_button);
         giantStormAnswer = findViewById(R.id.giant_storm_button);
-        ringsSurrounded = findViewById(R.id.rings_surrounded);
-        tiltedOrbit = findViewById(R.id.tilted_orbit);
-        oneYear = findViewById(R.id.one_year);
-        alphaCentauri = findViewById(R.id.alpha_centauri);
-        hydrogenHelium = findViewById(R.id.hydrogen_helium);
-        redDwarf = findViewById(R.id.red_dwarf);
+        ringsSurrounded = findViewById(R.id.rings_surrounded_cb);
+        tiltedOrbit = findViewById(R.id.tilted_orbit_cb);
+        oneYear = findViewById(R.id.one_year_cb);
+        alphaCentauri = findViewById(R.id.alpha_centauri_cb);
+        hydrogenHelium = findViewById(R.id.hydrogen_helium_cb);
+        redDwarf = findViewById(R.id.red_dwarf_cb);
         plutoAnswer = findViewById(R.id.pluto_answer);
 
         radioGroup1 = findViewById(R.id.first_radio_group);
@@ -75,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
         radioGroup5 = findViewById(R.id.fifth_radio_group);
         radioGroup6 = findViewById(R.id.sixth_radio_group);
         radioGroup7 = findViewById(R.id.seventh_radio_group);
-
     }
 
     @Override
@@ -95,7 +93,6 @@ public class MainActivity extends AppCompatActivity {
     /*** calculates the score based on the right answers**/
 
     public int calculateScore(int score) {
-
         boolean firstQuestion =
                 mercuryAnswer.isChecked();
         if (firstQuestion) score += 1;
@@ -150,8 +147,9 @@ public class MainActivity extends AppCompatActivity {
         }
         String tenthQuestion = plutoAnswer.getText().toString();
         tenthQuestion = tenthQuestion.trim();
-        if (tenthQuestion.contains("Pluto") || tenthQuestion.contains("Plutone"))
+        if (tenthQuestion.contains("Pluto") || tenthQuestion.contains("Plutone")) {
             score += 1;
+        }
         return (score);
     }
 
