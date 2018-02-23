@@ -47,7 +47,6 @@ public class MainActivity extends AppCompatActivity {
     RadioGroup radioGroup6;
     RadioGroup radioGroup7;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,7 +68,6 @@ public class MainActivity extends AppCompatActivity {
         redDwarf = findViewById(R.id.red_dwarf);
         plutoAnswer = findViewById(R.id.pluto_answer);
 
-
         radioGroup1 = findViewById(R.id.first_radio_group);
         radioGroup2 = findViewById(R.id.second_radio_group);
         radioGroup3 = findViewById(R.id.third_radio_group);
@@ -79,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
         radioGroup7 = findViewById(R.id.seventh_radio_group);
 
     }
-
 
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
@@ -95,25 +92,19 @@ public class MainActivity extends AppCompatActivity {
         return super.dispatchTouchEvent(ev);
     }
 
-
-    /**
-     * calculates the score based on the right answers
-     **/
+    /*** calculates the score based on the right answers**/
 
     public int calculateScore(int score) {
-
 
         boolean firstQuestion =
                 mercuryAnswer.isChecked();
         if (firstQuestion) score += 1;
-
 
         boolean secondQuestion =
                 eightMinutesAnswer.isChecked();
         if (secondQuestion) {
             score += 1;
         }
-
         boolean thirdQuestion =
                 jSunAnswer.isChecked();
         if (thirdQuestion) {
@@ -141,32 +132,29 @@ public class MainActivity extends AppCompatActivity {
         }
         boolean eightQuestion1 =
                 tiltedOrbit.isChecked();
-
         boolean eightQuestion2 =
                 ringsSurrounded.isChecked();
-        if (eightQuestion1 && eightQuestion2) {
+        boolean eightQuestion3 =
+                oneYear.isChecked();
+        if (eightQuestion1 && eightQuestion2 && !eightQuestion3) {
             score += 1;
-
         }
         boolean ninthQuestion1 =
                 alphaCentauri.isChecked();
         boolean ninthQuestion2 =
+                hydrogenHelium.isChecked();
+        boolean ninthQuestion3 =
                 redDwarf.isChecked();
-        if (ninthQuestion1 && ninthQuestion2) {
+        if (ninthQuestion1 && !ninthQuestion2 && ninthQuestion3) {
             score += 1;
         }
-
         String tenthQuestion = plutoAnswer.getText().toString();
         if (tenthQuestion.contains("Pluto") || tenthQuestion.contains("Plutone"))
             score += 1;
-
         return (score);
-
     }
 
-    /**
-     * This method  triggers when the reset button is pressed*
-     */
+    /*** This method  triggers when the reset button is pressed**/
 
     public void resetAnswers(View view) {
         nameField.setText("");
@@ -184,58 +172,33 @@ public class MainActivity extends AppCompatActivity {
         hydrogenHelium.setChecked(false);
         redDwarf.setChecked(false);
         plutoAnswer.setText("");
-
     }
 
-    /**
-     * it triggers when the Submit Answers button is pressed and it shows a Toast message with a score summary, based on the right answers given
-     **/
-
+    /*** it triggers when the Submit Answers button is pressed and it shows a Toast message with a score summary, based on the right answers given**/
 
     public void submitAnswer(View view) {
         String name = nameField.getText().toString();
         int finalScore = calculateScore(score);
         String finalScoreMessage = name + "\b" + getString(R.string.you) + "\b" + finalScore + "\b" + getString(R.string.questions);
 
-
         if (finalScore >= 8) {
             Toast.makeText(this, finalScoreMessage + "\n" +
                     getString(R.string.toast1), Toast.LENGTH_LONG).show();
-        }
-
-        if (finalScore == 7) {
+        } else if (finalScore <= 7 && finalScore > 5) {
             Toast.makeText(this, finalScoreMessage + "\n" + getString(R.string.toast2),
                     Toast.LENGTH_LONG).show();
-        }
-
-        if (finalScore == 6) {
-            Toast.makeText(this, finalScoreMessage + "\n" + getString(R.string.toast2),
-                    Toast.LENGTH_LONG).show();
-        }
-
-        if (finalScore == 5) {
-            Toast.makeText(this, finalScoreMessage + "\n" + getString(R.string.toast2),
-                    Toast.LENGTH_LONG).show();
-        }
-
-        if (finalScore < 5) {
+        } else {
             Toast.makeText(this, finalScoreMessage + "\n" + getString(R.string.toast3) + "\n" + getString(R.string.again),
                     Toast.LENGTH_LONG).show();
         }
-/**
- * This intent opens a second activity in which the user will share the score.
- **/
+
+        /*** This intent opens a second activity in which the user will share the score.**/
+
         Intent shareIntent = new Intent(this, Main2Activity.class);
         String message = getString(R.string.scored) + "\b" + finalScore + "\b" + getString(R.string.share_mess);
         shareIntent.setAction(Intent.ACTION_SEND_MULTIPLE);
         shareIntent.putExtra("message", message);
         shareIntent.setType("message");
         startActivity(shareIntent);
-
-
     }
-
-
 }
-
-
